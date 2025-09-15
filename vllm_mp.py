@@ -24,7 +24,7 @@ from vllm import LLM, SamplingParams
 from qwen_vl_utils import process_vision_info
 from base_info import get_prompt
 
-DEFAULT_MODEL_PATH = "wj-inf/MagicData340k"
+DEFAULT_MODEL_PATH = "wj-inf/MagicAssessor-7B"
 
 def ensure_image_1024(image_path: str) -> str:
     """
