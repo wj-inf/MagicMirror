@@ -1,11 +1,6 @@
-# MagicMirror: A Large-Scale Dataset and Benchmark for Fine-Grained Artifacts Assessment in Text-to-Image Generation
-
-<p align="center">
-    <a href="https://arxiv.org/abs/2509.10260" class="link-button"><strong>arXiv</strong></a> | 
-    <a href="https://huggingface.co/datasets/wj-inf/MagicData340k" class="link-button"><strong>Dataset</strong></a> | 
-    <a href="https://huggingface.co/wj-inf/MagicAssessor-7B" class="link-button"><strong>Model</strong></a> | 
-    <a href="https://github.com/wj-inf/MagicMirror" class="link-button"><strong>Benchmark</strong></a>
-</p>
+<h1 align="center" style="line-height: 50px;">
+MagicMirror: A Large-Scale Dataset and Benchmark for Fine-Grained Artifacts Assessment in Text-to-Image Generation
+</h1>
 
 <p align="center">
     <a href="https://scholar.google.com/citations?user=XtEtqU0AAAAJ&hl=en">Jia Wang</a><sup>1,2</sup>, 
@@ -28,7 +23,15 @@
     Contact: <code>wangj.infinite@gmail.com</code>, <code>hujiemr@gmail.com</code>
 </p>
 
->
+<p align="center">
+<a href="https://arxiv.org/abs/2509.10260"><img src="https://img.shields.io/badge/arXiv-2509.10260-b31b1b.svg" alt="arXiv"></a>
+    <a href="https://huggingface.co/datasets/wj-inf/MagicData340k"><img src="https://img.shields.io/badge/🤗%20Huggingface-Dataset-yellow" alt="Dataset"></a>
+    <a href="https://huggingface.co/wj-inf/MagicAssessor-7B"><img src="https://img.shields.io/badge/🤗%20Huggingface-Model-blue" alt="Model"></a>
+    <a href="https://github.com/wj-inf/MagicMirror"><img src="https://img.shields.io/badge/GitHub-Benchmark-181717?logo=github" alt="Benchmark"></a>
+    <a href="https://wj-inf.github.io/MagicMirror-page"><img src="https://img.shields.io/badge/Home-Page-b3.svg" alt="Page"></a>
+</p>
+
+
 > We present **MagicMirror**, a comprehensive framework for artifacts assessment. We first establish a detailed taxonomy of generated image artifacts. Guided by this taxonomy, we manually annotate **MagicData340K**, the first human-annotated large-scale dataset of 340K generated images with fine-grained artifact labels. Building on this dataset, we train **MagicAssessor**, a Vision-Language Model (VLM) that provides detailed assessments and corresponding labels. We leverage MagicAssessor to construct **MagicBench**, an automated benchmark for evaluating the image artifacts of current T2I models.
 <p align="center"><img src="assets/output_example.png" width="95%"></p>
 
