@@ -1,8 +1,33 @@
 # MagicMirror: A Large-Scale Dataset and Benchmark for Fine-Grained Artifacts Assessment in Text-to-Image Generation
 
-> Jia Wang, [Jie Hu](https://scholar.google.com/citations?hl=en&user=DAJdHnkAAAAJ), Xiaoqi Ma, Hanghang Ma, yanbing Zeng, Xiaoming Wei
->
-> contact: wangj.infinite@gmail.com, hujiemr@gmail.com
+<p align="center">
+    <a href="https://arxiv.org/abs/2509.10260" class="link-button"><strong>arXiv</strong></a> | 
+    <a href="https://huggingface.co/datasets/wj-inf/MagicData340k" class="link-button"><strong>Dataset</strong></a> | 
+    <a href="https://huggingface.co/wj-inf/MagicAssessor-7B" class="link-button"><strong>Model</strong></a> | 
+    <a href="https://github.com/wj-inf/MagicMirror" class="link-button"><strong>Benchmark</strong></a>
+</p>
+
+<p align="center">
+    <a href="https://scholar.google.com/citations?user=XtEtqU0AAAAJ&hl=en">Jia Wang</a><sup>1,2</sup>, 
+    <a href="https://scholar.google.com/citations?hl=en&user=DAJdHnkAAAAJ">Jie Hu</a><sup>2†</sup>, 
+    Xiaoqi Ma<sup>2</sup>, 
+    Hanghang Ma<sup>2</sup>, 
+    Yanbing Zeng<sup>2</sup>, 
+    Xiaoming Wei<sup>2</sup>
+</p>
+
+<p align="center">
+    <sup>1</sup>University of Chinese Academy of Sciences &nbsp;&nbsp;&nbsp; <sup>2</sup>Meituan
+</p>
+
+<p align="center">
+    <sup>†</sup>Corresponding author
+</p>
+
+<p align="center">
+    Contact: <code>wangj.infinite@gmail.com</code>, <code>hujiemr@gmail.com</code>
+</p>
+
 >
 > We present **MagicMirror**, a comprehensive framework for artifacts assessment. We first establish a detailed taxonomy of generated image artifacts. Guided by this taxonomy, we manually annotate **MagicData340K**, the first human-annotated large-scale dataset of 340K generated images with fine-grained artifact labels. Building on this dataset, we train **MagicAssessor**, a Vision-Language Model (VLM) that provides detailed assessments and corresponding labels. We leverage MagicAssessor to construct **MagicBench**, an automated benchmark for evaluating the image artifacts of current T2I models.
 <p align="center"><img src="assets/output_example.png" width="95%"></p>
@@ -29,7 +54,6 @@ pip install numpy==1.24.3 scipy==1.10.1 pylatexenc
 
 ## Assess your own T2I models
 Organize your image data as *./output/sdxl/merged_result_sdxl.jsonl*.
-
 ```bash
 bash run.sh flux-schnell sdxl
 ```
